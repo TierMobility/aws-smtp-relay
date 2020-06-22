@@ -7,8 +7,8 @@ orbs:
 jobs:
   build:
     executor: aws-cli/default
-    environment:
-      DOCKER_BUILDKIT: 1
+    # environment:
+    #   DOCKER_BUILDKIT: 1 # not supported by CircleCI daemon
     working_directory: ~/repo
     steps:
       - checkout
